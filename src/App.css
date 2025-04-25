@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent !important;
+}
+
+.text-stroke {
+  color: white;
+  -webkit-text-stroke: 1px rgb(83, 83, 83);
+}
