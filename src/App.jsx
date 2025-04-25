@@ -347,7 +347,7 @@ function App() {
                           <span>✔️ Tarjeta de Fidelidad </span>
                         </li>
                         <li className="flex items-center mb-2">
-                          <span>✔️ Web completamente a la medida </span>
+                          <span>✔️ Web a la medida </span>
                         </li>
                         <li className="flex items-center mb-2">
                           <span>✔️ Mini web publica </span>
