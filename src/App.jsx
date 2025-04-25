@@ -4,6 +4,7 @@ import Kodi from './assets/kodi.png'
 import KodiPensando from './assets/kodi-pensando.png'
 import KodiCarta from './assets/kodi-carta.png'
 import KodiCel from './assets/kodi-cel1.png'
+import Icon from './assets/icon.png'
 import Fondo from './assets/fondo.svg'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -42,7 +43,10 @@ function App() {
     <nav className="bg-gradient-to-r from-teal-800 to-indigo-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0 text-2xl font-bold tracking-wide">KODI</div>
+            <div className="flex text-2xl font-bold tracking-wide items-center gap-2">
+              <img src={Icon} alt="Logo" className="h-12 w-12 inline-block mr-2" />
+              KODY <p className="text-xl text-gray-200">SOLUTIONS</p>
+            </div>
             <ul className="hidden md:flex space-x-6 text-sm font-medium">
               <li><a href="#" className="hover:text-gray-400">Home</a></li>
               <li><a href="#" className="hover:text-gray-400">About</a></li>
