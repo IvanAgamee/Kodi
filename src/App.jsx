@@ -393,7 +393,7 @@ function App() {
           <img
             src={KodiCarta}
             alt="Contáctanos"
-            className="h-auto object-cover pr-12 w-[120%] max-w-none"
+            className="w-[137%] max-w-none relative right-[30%]"
           />
         </div>
 
