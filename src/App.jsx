@@ -325,7 +325,10 @@ function App() {
                       </li>
                     </ul>  
 
-                    
+                    <div className="flex justify-center gap-3 mt-8">
+                        <h3 className="text-3xl text-red-800 font-bold mb-6 line-through"> $ 2,500.00 </h3>
+                        <h3 className="text-3xl text-green-500 font-bold mb-6"> $ 1,500.00 </h3>
+                    </div>
 
                     </div>
 
@@ -360,9 +363,17 @@ function App() {
                         </li>
                       </ul>  
 
-                      <button className="bg-indigo-500 text-white px-6 py-3 rounded-lg animate-bounce hover:bg-teal-700 transition shadow-md mt-4">
+                      <div className="flex justify-center gap-3 mt-8">
+                        <h3 className="text-3xl text-red-800 font-bold mb-6 line-through"> $ 2,500.00 </h3>
+                        <h3 className="text-3xl text-green-500 font-bold mb-6"> $ 1,500.00 </h3>
+                      </div>
+
+                    <div className='flex justify-center'>
+                      <button className="bg-indigo-500 text-white px-6 py-3 rounded-lg animate-bounce hover:bg-teal-700 transition shadow-md mt-4 flex items-center justify-center">
+                      <ShoppingCart className="text-white mx-4" size={28} />
                         ¡Quiero este paquete!
                       </button>
+                    </div>
 
                       </div>
 
