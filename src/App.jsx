@@ -293,6 +293,7 @@ function App() {
       </div>
     </section>
 
+    <LimitedOfferBanner deadline="2025-04-30T23:59:59" /> 
     <section id="productos" className="py-32 bg-[url('./assets/fondo4.svg')] bg-cover bg-no-repeat bg-center">
 
                 <h6 className="text-5xl font-bold text-white text-center"> SELECCIONA TU PAQUETE </h6>
@@ -385,10 +386,10 @@ function App() {
 
                 </div>
 
-
+                
     </section>
 
-
+    <LimitedOfferBanner deadline="2025-04-30T23:59:59" /> 
 
 
 
