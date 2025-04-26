@@ -83,7 +83,7 @@ function App() {
               {/* Carrusel de iconos */}
               <div
                 ref={carouselRef}
-                className="flex overflow-x-auto no-scrollbar space-x-6 mb-10 px-2 py-6"
+                className="flex overflow-hidden no-scrollbar space-x-6 mb-10 px-2 py-6"
               >
                 {icons.map((Icon, idx) => (
                   <div key={idx} className="min-w-[60px] h-16 flex items-center justify-center bg-white rounded-full shadow hover:scale-110 transition">
@@ -306,7 +306,7 @@ function App() {
                 {/* dividir en 2 columnas */}
 
                 <div className="max-w-7xl mx-auto px-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                   <div data-aos="slide-right" className="bg-white rounded-lg shadow-lg p-6 text-center border border-teal-600">
 
@@ -332,7 +332,7 @@ function App() {
 
                     <div className="flex justify-center gap-3 mt-8">
                         <h3 className="text-3xl text-red-800 font-bold mb-6 line-through"> $ 2,500.00 </h3>
-                        <h3 className="text-3xl text-green-500 font-bold mb-6"> $ 1,500.00 </h3>
+                        <h3 className="text-3xl text-green-500 font-bold mb-6"> $ 1,900.00 </h3>
                     </div>
 
                     </div>
@@ -340,7 +340,49 @@ function App() {
 
                   {/* Lista con checkboxs */}
 
-                    <div data-aos="slide-left" className="bg-white rounded-lg shadow-lg p-6 text-center border border-teal-600">
+                    <div data-aos="fade" className="bg-white rounded-lg shadow-lg p-6 text-center border border-teal-600">
+
+                      <h3 className="text-3xl text-teal-800 font-bold mb-6"> ¡PAQUETE KODI! </h3>
+
+                      <ul className="text-gray-600 px-6 py-6 text-xl">
+                        <li className="flex items-center mb-2">
+                          <span>✔️ Control de citas </span>
+                        </li>
+                        <li className="flex items-center mb-2">
+                          <span>✔️ Tarjeta de Fidelidad </span>
+                        </li>
+                        <li className="flex items-center mb-2">
+                          <span>✔️ Web a la medida </span>
+                        </li>
+                        <li className="flex items-center mb-2">
+                          <span>✔️ Mini web publica </span>
+                        </li>
+                        <li className="flex items-center mb-2">
+                          <span>✔️ 10 Flyers al mes </span>
+                        </li>
+                        <li className="flex items-center mb-2">
+                          <span>✔️ 10 Flyers al mes </span>
+                        </li>
+                        <li className="flex items-center mb-2">
+                          <span>✔️ Soporte 24/7</span>
+                        </li>
+                      </ul>  
+
+                      <div className="flex justify-center gap-3 mt-8">
+                        <h3 className="text-3xl text-red-800 font-bold mb-6 line-through"> $ 4,800.00 </h3>
+                        <h3 className="text-3xl text-green-500 font-bold mb-6"> $ 2,450.00 </h3>
+                      </div>
+
+                    <div className='flex justify-center'>
+                      <button className="bg-indigo-500 text-white px-6 py-3 rounded-lg animate-bounce hover:bg-teal-700 transition shadow-md mt-4 flex items-center justify-center">
+                      <ShoppingCart className="text-white mx-4" size={28} />
+                        ¡Quiero este paquete!
+                      </button>
+                    </div>
+
+                      </div>
+
+                      <div data-aos="slide-left" className="bg-white rounded-lg shadow-lg p-6 text-center border border-teal-600">
 
                       <h3 className="text-3xl text-teal-800 font-bold mb-6"> ¡PAQUETE LUZCAS! </h3>
 
@@ -369,8 +411,8 @@ function App() {
                       </ul>  
 
                       <div className="flex justify-center gap-3 mt-8">
-                        <h3 className="text-3xl text-red-800 font-bold mb-6 line-through"> $ 2,500.00 </h3>
-                        <h3 className="text-3xl text-green-500 font-bold mb-6"> $ 1,500.00 </h3>
+                        <h3 className="text-3xl text-red-800 font-bold mb-6 line-through"> $ 4,800.00 </h3>
+                        <h3 className="text-3xl text-green-500 font-bold mb-6"> $ 2,950.00 </h3>
                       </div>
 
                     <div className='flex justify-center'>
