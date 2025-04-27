@@ -58,15 +58,15 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <header className=" bg-[#76b8bc] text-white py-1 pt-6">
+      <header className=" bg-[#76b8bc] text-white py-1 pt-6 px-4 md:px-0" >
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4"> ¿Quieres Aumentar tus Ventas?</h1>
+          <h1 className="text-xl md:text-4xl font-extrabold mb-1 md:mb-2"> ¿Quieres Aumentar tus Ventas?</h1>
           <p className="text-lg md:text-md mb-5 animate-fade-in-up">Agenda clientes, envía recordatorios, publicidad, paginas web y más.</p>
         </div>
       </header>
 
       {/* Placeholder de productos */}
-      <section id="productos" className="pt-20 bg-[url('./assets/fondo.svg')] bg-cover bg-no-repeat bg-center">
+      <section id="productos" className="pt-8 md:pt-20 bg-[url('./assets/fondo.svg')] bg-cover bg-no-repeat bg-center">
         <div className="max-w-7xl mx-auto px-4">
 
           <div className="flex flex-col md:flex-row items-center md:items-start">
@@ -76,14 +76,14 @@ function App() {
             <div className="md:w-1/2 w-full mr-10">
 
               {/* Título animado */}
-              <h2 className="text-8xl font-extrabold text-gray-700 mb-6 text-left animate-fade-in-up">
+              <h2 className="text-6xl px-5 md:text-8xl md:px-0 font-extrabold text-gray-700 mb-6 text-center md:text-left animate-fade-in-up">
                 Descubre lo Mejor para Tu Negocio
               </h2>
 
               {/* Carrusel de iconos */}
               <div
                 ref={carouselRef}
-                className="flex overflow-hidden no-scrollbar space-x-6 mb-10 px-2 py-6"
+                className="md:flex overflow-hidden hidden no-scrollbar space-x-6 mb-10 px-2 py-6"
               >
                 {icons.map((Icon, idx) => (
                   <div key={idx} className="min-w-[60px] h-16 flex items-center justify-center bg-white rounded-full shadow hover:scale-110 transition">
@@ -94,7 +94,7 @@ function App() {
 
 
               {/* Botones estratégicos */}
-              <div className="flex justify-center gap-6 mt-8 animate-bounce">
+              <div className="flex justify-center gap-6 mt-12 md:mt-8 animate-bounce">
                 <button className="bg-white text-teal-800 px-6 py-3 rounded-lg transition shadow-md border border-teal-600 hover:bg-teal-50">
                   Conoce Más
                 </button>
@@ -105,11 +105,11 @@ function App() {
               </div>
 
             {/* Columna derecha: imagen */}
-            <div data-aos="slide-up" className="md:w-1/2 w-full mt-10 md:mt-0 flex justify-end md:justify-end ml-10">
+            <div data-aos="slide-up" className="md:w-1/2 w-full mt-10 md:mt-0 flex justify-center md:justify-end ml-10">
               <img
                 src={Kodi}
                 alt="Oferta especial"
-                className="w-[137%] max-w-none relative left-[35%] animate-fade-in-up"
+                className="w-[87%] md:w-[137%] max-w-none relative md:left-[35%] animate-fade-in-up"
               />
             </div>
 
@@ -121,13 +121,13 @@ function App() {
 
       <section id="productos" className="py-24 bg-[url('./assets/fondo5.svg')] bg-cover bg-no-repeat bg-center">
 
-                <h6 className="text-4xl font-bold text-white pb-12 text-center">¿Por qué Elegirnos?</h6>
+                <h6 className="text-4xl font-bold text-white pb-12 text-center">¿Por qué elegirnos?</h6>
 
                 {/* cards */}
 
                 {/* AQUII */}
 
-                <div className="max-w-7xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-8 md:px-4">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div data-aos="fade-up" className="bg-white rounded-lg shadow-lg p-6 text-center">
                       <div className='flex flex-col items-center'>
@@ -166,7 +166,7 @@ function App() {
 
       <section className="bg-[url('./assets/fondo6.svg')] bg-cover bg-no-repeat bg-center py-14">
 
-      <h2 className="text-6xl font-bold text-center text-gray-700 mb-4"> ¡Unete a la Revolución Digital! </h2>
+      <h2 className="text-4xl md:text-6xl font-bold text-center text-gray-700 mb-4"> ¡Unete a la Revolución Digital! </h2>
 
       <div className="max-w-7xl mt-12 mx-auto flex flex-col md:flex-row items-center">
       
@@ -183,13 +183,13 @@ function App() {
 
         {/* Contenido */}
 
-        <div data-aos="slide-up" className="flex-1 h-full md:w-1/2 bg-gradient-to-r from-teal-800 to-indigo-600 text-white min-h-[600px] min-w-[700px] p-12">
+        <div data-aos="slide-up" className="flex-1 h-full md:w-1/2 bg-gradient-to-r from-teal-800 to-indigo-600 text-white min-h-[600px] min-w-[700px] pt-12 px-12 md:p-12">
 
         
-          <h2 className="text-3xl font-bold mb-6"> AGENDA UNA DEMOSTRACION GRATIS </h2>
-          <p className="text-lg mb-4"> ¿Aún no estás seguro? ¡No te preocupes! Agenda una demostración gratuita 
+          <h2 className="text-xl text-center md:text-left md:text-3xl font-bold mb-6"> AGENDA UNA DEMOSTRACION GRATIS </h2>
+          <p className="text-sm md:text-lg mb-4"> ¿Aún no estás seguro? ¡No te preocupes! Agenda una demostración gratuita 
           y uno de nuestros expertos te contactará para mostrarte y asesorarte sobre como funcionan nuestros servicios.</p>
-          <p className="text-2xl text-green-200 text-center mb-6 my-8"> ¡Totalmente gratis y sin compromiso! </p>
+          <p className="text:md md:text-2xl text-green-200 text-center mb-6 my-8"> ¡Totalmente gratis y sin compromiso! </p>
 
           <div className="flex justify-center">
             <img
@@ -213,14 +213,14 @@ function App() {
 
 
 
-      <section className="py-32 bg-[url('./assets/fondo7.svg')] bg-cover bg-no-repeat bg-center">
+      <section className="py-12 md:py-32 bg-[url('./assets/fondo7.svg')] bg-cover bg-no-repeat bg-center">
       <div className="max-w-7xl mx-auto px-4">
         {/* Contenedor principal con flex */}
-        <div className="flex items-center justify-between gap-6">
+        <div className="flex items-center justify-between flex-col md:flex-row">
 
 
           {/* Sección de imagen (mitad izquierda) */}
-          <div data-aos="slide-right" className="w-1/3 flex justify-center">
+          <div data-aos="slide-right" className="w-1/3 flex justify-center mb-8 md:mb-0">
             <img
               src={KodiPensando}
               alt="Imagen ejemplo"
@@ -229,9 +229,9 @@ function App() {
           </div>
 
           {/* Sección de contenido (mitad derecha) */}
-          <div className="w-2/3 pl-24">
-            <h2 className="text-6xl font-bold text-gray-700 mb-4">Nuestros Servicios</h2>
-            <p className="text-lg text-gray-600 mb-6">Aprovecha nuestras soluciones personalizadas para acelerar el crecimiento de tu empresa.</p>
+          <div className="w-2/3 md:pl-24">
+            <h2 className="text-6xl font-bold text-gray-700 mb-4 text-center md:text-left"> Nuestros Servicios </h2>
+            <p className="text-lg text-gray-600 mb-6 text-center md:text-left">Aprovecha nuestras soluciones personalizadas para acelerar el crecimiento de tu empresa.</p>
 
             {/* AQUII */}
             <div className="max-w-7xl mx-auto px-4">
@@ -298,14 +298,17 @@ function App() {
     </section>
 
     <LimitedOfferBanner deadline="2025-04-30T23:59:59" /> 
-    <section id="productos" className="py-32 bg-[url('./assets/fondo4.svg')] bg-cover bg-no-repeat bg-center">
 
-                <h6 className="text-5xl font-bold text-white text-center"> SELECCIONA TU PAQUETE </h6>
-                <p className="text-lg mb-4 text-center text-gray-300 pt-4 pb-12"> ¿Quieres un paquete a la medida? ¡Contáctanos y te ayudamos a crear el paquete perfecto para tu negocio!</p>
+
+
+    <section id="productos" className="py-12 md:py-32 bg-[url('./assets/fondo4.svg')] bg-cover bg-no-repeat bg-center">
+
+                <h6 className="text-2xl md:text-5xl font-bold text-white text-center"> SELECCIONA TU PAQUETE </h6>
+                <p className="text-md px-12 md:px-0 md:text-lg mb-4 text-center text-gray-300 pt-4 pb-12"> ¿Quieres un paquete a la medida? ¡Contáctanos y te ayudamos a crear el paquete perfecto para tu negocio!</p>
 
                 {/* dividir en 2 columnas */}
 
-                <div className="max-w-7xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-12 md:px-4">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                   <div data-aos="slide-right" className="bg-white rounded-lg shadow-lg p-6 text-center border border-teal-600">
@@ -443,7 +446,7 @@ function App() {
 
 
 
-    <section className=" bg-[url('./assets/fondo7.svg')] bg-cover bg-no-repeat bg-center py-32">
+    <section className=" bg-[url('./assets/fondo7.svg')] bg-cover bg-no-repeat bg-center py-12 md:py-32">
       <div className="max-w-7xl px-4 flex flex-col md:flex-row items-center gap-12 mx-auto">
         
         {/* Imagen */}
@@ -451,12 +454,12 @@ function App() {
           <img
             src={KodiCarta}
             alt="Contáctanos"
-            className="w-[137%] max-w-none relative right-[30%]"
+            className="w-[90%] pl-8 md:pl-0 md:w-[137%] max-w-none relative md:right-[30%]"
           />
         </div>
 
         {/* Formulario */}
-        <div data-aos="slide-up" className="w-full md:w-1/2 bg-gray-100 p-8 rounded-xl shadow-lg">
+        <div data-aos="slide-up" className="w-full md:w-1/2 bg-gray-100 p-8 rounded-xl shadow-lg mx:12 md:mx-0">
           <h2 className="text-5xl font-bold text-gray-800 mb-12">Contáctanos</h2>
           <form className="space-y-4">
             <div>
